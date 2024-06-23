@@ -15,7 +15,6 @@
 
       # Fundamental tools
       (rxvt-unicode.override { configure = _: { perlDeps = with perl538Packages; [ commonsense LinuxFD SubExporter SubInstall DataOptList ParamsUtil ]; };})
-      rxvt-unicode
       emacs
       vim-full
 
@@ -37,12 +36,6 @@
       feh
       vlc
       zathura
-
-      # Fonts
-      bqn386  # For BQN
-      inconsolata  # FIXME: this package doesn't add inconsolata to fc-cache
-      noto-fonts  # For other scripts
-      powerline-fonts
 
       # Documentation
       pandoc

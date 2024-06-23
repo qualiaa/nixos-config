@@ -19,6 +19,18 @@
     };
   };
 
+  # Fonts
+  fonts = {
+    fontconfig.enable = true;
+    packages = with pkgs; [
+      bqn386  # For BQN
+      inconsolata
+      inconsolata-nerdfont
+      noto-fonts
+      powerline-fonts
+    ];
+  };
+
   # Enable sound with pipewire.
   sound.enable = true;
   hardware.pulseaudio.enable = false;
