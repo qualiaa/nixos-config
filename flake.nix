@@ -14,7 +14,7 @@
   in
   {
     # TODO: Push modules into default.nix for each system
-    nixosConfigurations.fw16 = nixpkgs.lib.nixosSystem {
+    nixosConfigurations.jamie-fw-nixos = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       specialArgs = specialArgs;
       modules = [
