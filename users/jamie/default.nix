@@ -23,8 +23,6 @@
       python3  # NB: pythonFull includes tcl etc, but this is just for basic support
 
       # Applications
-      discord
-      element-desktop
       firefox
       gimp
       inkscape
@@ -32,6 +30,11 @@
       meld
       strawberry
       zotero
+
+      # Messengers
+      discord
+      element-desktop
+      signal-desktop
 
       # Viewers
       feh
