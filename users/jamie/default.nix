@@ -1,4 +1,4 @@
-{ lib, pkgs, isDesktop, ... }:
+{ lib, config, pkgs, isDesktop, ... }:
 {
   users.users.jamie = {
     isNormalUser = true;
