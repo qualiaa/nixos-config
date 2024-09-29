@@ -29,6 +29,7 @@
       gimp
       inkscape
       libreoffice
+      meld
       strawberry
       zotero
 
@@ -55,10 +56,14 @@
       zenith
 
       # Nix tools
+      binutils
       nix-prefetch-scripts
+      patchelf
+      pkg-config
 
       # CLI tools
       comma
+      config.boot.kernelPackages.perf
       screenfetch
     ]);
   };
