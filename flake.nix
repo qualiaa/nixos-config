@@ -2,15 +2,17 @@
   description = "My NixOS configuration";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-24.05";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     nixos-hardware.url = "github:NixOS/nixos-hardware";
   };
 
   outputs = { self, nixpkgs, nixos-hardware, ... }: let
+
     specialArgs = {
       inherit nixos-hardware;
       isDesktop = true;
     };
+
   in
   {
     # TODO: Push modules into default.nix for each system
