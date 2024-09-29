@@ -26,6 +26,7 @@
       firefox
       gimp
       inkscape
+      krita
       libreoffice
       meld
       strawberry
