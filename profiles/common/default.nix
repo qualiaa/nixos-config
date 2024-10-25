@@ -3,6 +3,8 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
+  networking.firewall.allowedUDPPorts = [ 5901 ];
+
   nix = {
     settings = {
       trusted-users = [ "@wheel" ];

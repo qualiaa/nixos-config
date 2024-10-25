@@ -41,6 +41,7 @@
       feh
       vlc
       zathura
+      rmview
 
       # Documentation
       pandoc
