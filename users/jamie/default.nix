@@ -67,8 +67,12 @@
       pkg-config
 
       # CLI tools
+      bat
       comma
       config.boot.kernelPackages.perf
+      difftastic
+      eza
+      fd
       screenfetch
     ]);
   };
