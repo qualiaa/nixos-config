@@ -14,7 +14,7 @@
       openvpn
 
       # Fundamental tools
-      (rxvt-unicode.override { configure = _: { perlDeps = with perl538Packages; [ commonsense LinuxFD SubExporter SubInstall DataOptList ParamsUtil ]; };})
+      (rxvt-unicode.override { configure = _: { perlDeps = with perl540Packages; [ commonsense LinuxFD SubExporter SubInstall DataOptList ParamsUtil ]; };})
       emacs
       vim-full
 
