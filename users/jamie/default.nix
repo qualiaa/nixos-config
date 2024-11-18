@@ -55,9 +55,11 @@
       pulseaudio-ctl
       rofi
       scrot
-      xsel
+      xfce.thunar
+      xfce.tumbler
       xorg.xev
       xorg.xprop
+      xsel
       zenith
 
       # Nix tools
