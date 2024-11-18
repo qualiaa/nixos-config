@@ -2,7 +2,8 @@
   description = "My NixOS configuration";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    # NOTE: Pinned to unstable revision before amdgpu goes poof
+    nixpkgs.url = "github:nixos/nixpkgs/12228ff";
     nixos-hardware.url = "github:NixOS/nixos-hardware";
   };
 
@@ -38,4 +39,3 @@
     };
   };
 }
-
