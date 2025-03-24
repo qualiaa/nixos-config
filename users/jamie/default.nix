@@ -46,6 +46,7 @@
       # Documentation
       pandoc
       texliveFull
+      python312Packages.pygments
 
       # Desktop utilities
       dunst
