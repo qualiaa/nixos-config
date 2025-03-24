@@ -54,6 +54,8 @@
       User backups
   '';
 
+  programs.direnv.enable = true;
+
   # Basic packages
   environment.systemPackages = with pkgs; [
     curl
