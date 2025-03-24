@@ -5,6 +5,8 @@
     ../../services
   ];
 
+  services.picom.enable = true;
+
   # X11 config
   services.xserver = {
     enable = true;
