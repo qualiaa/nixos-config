@@ -3,7 +3,7 @@
   users.users.jamie = {
     isNormalUser = true;
     description = "Jamie";
-    extraGroups = [ "docker" "networkmanager" "wheel" "video" ];
+    extraGroups = [ "docker" "networkmanager" "wheel" "video" "libvirtd" ];
     shell = pkgs.zsh;
 
     packages = with pkgs; [] ++ (lib.optionals isDesktop [
