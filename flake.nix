@@ -17,8 +17,9 @@
 
     system = "x86_64-linux";
 
-    signal-overlay = final: prev: {
+    unstable-overlay = final: prev: {
       signal-desktop = nixpkgs-unstable.legacyPackages.${system}.signal-desktop;
+      grub2 = nixpkgs-unstable.legacyPackages.${system}.grub2;
     };
 
   in
@@ -28,7 +29,7 @@
       inherit system;
       specialArgs = specialArgs;
       modules = [
-        ({ ... }: { nixpkgs.overlays = [ signal-overlay ]; })
+        ({ ... }: { nixpkgs.overlays = [ unstable-overlay ]; })
 
         nixos-hardware.nixosModules.framework-16-7040-amd
         ./hosts/fw16

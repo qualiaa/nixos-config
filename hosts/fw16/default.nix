@@ -10,18 +10,21 @@
   };
 
   # Use the systemd-boot EFI boot loader.
-  boot.loader.systemd-boot.enable = true;
+  boot.loader.grub = {
+    enable = true;
+    device = "nodev";
+    efiSupport = true;
+  };
   boot.loader.efi.canTouchEfiVariables = true;
 
   boot.initrd.luks.devices = {
-    crypted = {
-      device = "/dev/disk/by-uuid/eb3ca2b8-f17b-4468-ae9c-33bd4114572c";
+    root = {
+      device = "/dev/disk/by-uuid/c270fc7e-ae4b-433e-a4ac-3aced442107d";
       preLVM = true;
     };
   };
 
   fileSystems."/".options = [ "compress=lzo" "noatime" ];
-  fileSystems."/home".options = [ "compress=lzo" "noatime" ];
 
   virtualisation.docker.storageDriver = "btrfs";
 
@@ -58,5 +61,5 @@
 
   # Do NOT change this value unless you have manually inspected all the changes
   # it would make to your configuration, and migrated your data accordingly.
-  system.stateVersion = "23.11"; # Did you read the comment?
+  system.stateVersion = "24.11"; # Did you read the comment?
 }
