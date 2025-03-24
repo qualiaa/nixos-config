@@ -44,6 +44,12 @@
     Host crucible
       Hostname crucible.luffy.ai
       User git
+      IdentityFile id_luffy
+
+    Host cluster
+      Hostname head.cluster.luffy.ai
+      User jbayn
+      IdentityFile id_luffy
 
     Host piserve
       Hostname piserve
