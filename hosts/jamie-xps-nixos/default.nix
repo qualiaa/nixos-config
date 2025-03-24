@@ -10,10 +10,6 @@
 
   boot.initrd.luks.devices."luks-24dc2aad-a0de-4412-bd1e-3ccf96550e8b".device = "/dev/disk/by-uuid/24dc2aad-a0de-4412-bd1e-3ccf96550e8b";
 
-  # TODO: Copy required configuration files
-  q.restic.enable = lib.mkForce false;
-  q.restic.backupDate = "Sun 02:00";
-
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];
   #networking.firewall.allowedTCPPortRanges = [

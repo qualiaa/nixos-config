@@ -18,7 +18,26 @@
   fileSystems."/".options = [ "compress=lzo" "noatime" ];
   fileSystems."/home".options = [ "compress=lzo" "noatime" ];
 
-  q.restic.backupDate = "Sat 02:00";
+  services.restic.backups.fw16.user = "jamie";
+  services.restic.backups.fw16.repositoryFile = "/home/jamie/.restic-repository";
+  services.restic.backups.fw16.passwordFile = "/home/jamie/.restic-password";
+  services.restic.backups.fw16.environmentFile = "/home/jamie/.restic-env";
+  services.restic.backups.fw16.extraBackupArgs = [
+    "--exclude-file=/home/jamie/.restic-exclude-file"
+  ];
+  services.restic.backups.fw16.paths = [ "/home/jamie" ];
+  services.restic.backups.fw16.pruneOpts = [
+    "--keep-daily 7"
+    "--keep-weekly 5"
+    "--keep-monthly 12"
+    "--keep-yearly 75"
+  ];
+
+  services.restic.backups.fw16.timerConfig = {
+    OnCalendar = "12:00";
+    Persistent = true;
+    RandomizedDelaySec = "5h";
+  };
 
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];
