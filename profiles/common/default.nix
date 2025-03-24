@@ -13,6 +13,8 @@
     };
   };
 
+  # Docker
+  virtualisation.docker.enable = true;
 
   # UK Locale
   i18n.defaultLocale = "en_GB.UTF-8";

@@ -18,6 +18,9 @@
   fileSystems."/".options = [ "compress=lzo" "noatime" ];
   fileSystems."/home".options = [ "compress=lzo" "noatime" ];
 
+  virtualisation.docker.storageDriver = "btrfs";
+
+
   services.restic.backups.fw16.user = "jamie";
   services.restic.backups.fw16.repositoryFile = "/home/jamie/.restic-repository";
   services.restic.backups.fw16.passwordFile = "/home/jamie/.restic-password";
