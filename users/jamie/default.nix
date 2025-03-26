@@ -23,14 +23,17 @@
       python3  # NB: pythonFull includes tcl etc, but this is just for basic support
 
       # Applications
+      audacity
       firefox
       gimp
       inkscape
       krita
       libreoffice
       meld
+      musescore
       strawberry
       zotero
+
 
       # Messengers
       discord
