@@ -17,8 +17,8 @@
     system = "x86_64-linux";
 
     unstable-overlay = final: prev: {
-      signal-desktop = nixpkgs-unstable.legacyPackages.${system}.signal-desktop;
       grub2 = nixpkgs-unstable.legacyPackages.${system}.grub2;
+      signal-desktop-bin = nixpkgs-unstable.legacyPackages.${system}.signal-desktop-bin;
     };
 
   in
