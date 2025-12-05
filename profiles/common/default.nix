@@ -3,6 +3,9 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
+  # Add wordlist at $WORDLIST
+  environment.wordlist.enable = true;
+
   networking.firewall.allowedUDPPorts = [ 5901 ];
 
   nix = {
