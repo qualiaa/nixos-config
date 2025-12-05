@@ -1,1 +1,1 @@
-{ imports = [ ./cups ./nextcloud ./redshift ]; }
+{ imports = [ ./cups ./nextcloud ]; }

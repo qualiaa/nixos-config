@@ -14,7 +14,7 @@
       openvpn
 
       # Fundamental tools
-      (rxvt-unicode.override { configure = _: { perlDeps = with perl540Packages; [ commonsense LinuxFD SubExporter SubInstall DataOptList ParamsUtil ]; };})
+      kitty
       emacs
       vim-full
 
@@ -52,18 +52,17 @@
       python312Packages.pygments
 
       # Desktop utilities
-      dunst
-      libnotify
-      numlockx
+      i3status
+      grim  # screenshot regions
+      mako  # notifications
       pavucontrol
       pulseaudio-ctl
-      rofi
-      scrot
+      rofi-wayland
+      slurp  # screenshot capture
+      wl-clipboard  # clipboard
+      wev
       xfce.thunar
       xfce.tumbler
-      xorg.xev
-      xorg.xprop
-      xsel
       zenith
 
       # Nix tools

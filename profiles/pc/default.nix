@@ -5,12 +5,9 @@
     ../../services
   ];
 
-  services.picom.enable = true;
-
   # X11 config
   services.xserver = {
     enable = true;
-
     # Configure keymap in X11
     xkb = {
       layout = "gb";
@@ -53,8 +50,32 @@
   #       e.g. https://github.com/BirdeeHub/birdeeSystems/blob/582fe0c1123395c8cc0aa3a1bf6dfa3ce65dcfbb/common/i3/default.nix
   # Desktop, login and window managers
   services.xserver.displayManager.gdm.enable = true;
-  services.xserver.windowManager.i3.enable = true;
+  programs.sway = {
+    enable = true;
+    wrapperFeatures.gtk = true;
+  };
   services.xserver.desktopManager.gnome.enable = true;
+  environment.sessionVariables.NIXOS_OZONE_WL = "1";  # chromium/electron wayland support
+  environment.sessionVariables.MOZ_ENABLE_WAYLAND = "1";  # firefox wayland support
+
+  xdg.portal = {
+    enable = true;
+    xdgOpenUsePortal = true;
+
+    wlr = {
+      enable = true;
+      settings.screencast = {
+        # NOTE: Must set e.g. output_name = "eDP-2" for host
+        max_fps = 30;
+        #exec_before = "disable_notifications.sh";
+        #exec_after = "enable_notifications.sh";
+        chooser_type = "simple";
+        chooser_cmd = "${pkgs.slurp}/bin/slurp -f %o -or";
+      };
+    };
+    config.common.default = "wlr";
+  };
+  services.dbus.implementation = "broker";
 
   programs.nm-applet.enable = true;
   programs.nm-applet.indicator = false;

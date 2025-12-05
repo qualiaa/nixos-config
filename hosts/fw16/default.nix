@@ -28,6 +28,8 @@
     };
   };
 
+  xdg.portal.wlr.settings.screencast.output_name = "eDP-2";
+
   fileSystems."/".options = [ "compress=lzo" "noatime" ];
 
   virtualisation.docker.storageDriver = "btrfs";
