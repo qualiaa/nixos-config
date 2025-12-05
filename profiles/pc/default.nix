@@ -19,6 +19,8 @@
     };
   };
 
+  virtualisation.waydroid.enable = true;
+
   # Fonts
   fonts = {
     fontconfig.enable = true;
