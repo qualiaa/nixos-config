@@ -4,6 +4,9 @@
 
   networking.hostName = "jamie-fw-nixos";
 
+  hardware.bluetooth.enable = true;
+  hardware.bluetooth.powerOnBoot = true;
+
   hardware.graphics = {
     enable = true;
     enable32Bit = true;
@@ -49,6 +52,8 @@
     Persistent = true;
     RandomizedDelaySec = "5h";
   };
+
+  services.blueman.enable = true;
 
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];
