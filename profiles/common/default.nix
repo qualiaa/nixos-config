@@ -87,5 +87,8 @@
     usbutils
     vim
     wget
+
+    # Packages which must be installed at the environment level
+    zoom-us
   ];
 }
