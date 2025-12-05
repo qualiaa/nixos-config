@@ -27,7 +27,7 @@
     packages = with pkgs; [
       bqn386  # For BQN
       inconsolata
-      inconsolata-nerdfont
+      nerd-fonts.inconsolata
       noto-fonts
       powerline-fonts
     ];
