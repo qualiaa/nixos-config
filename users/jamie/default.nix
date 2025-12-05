@@ -79,6 +79,7 @@
       eza
       fd
       screenfetch
+      tree
     ]);
   };
 }
