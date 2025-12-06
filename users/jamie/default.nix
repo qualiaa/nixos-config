@@ -34,7 +34,6 @@
       strawberry
       zotero
 
-
       # Messengers
       discord
       element-desktop
@@ -59,6 +58,7 @@
       pulseaudio-ctl
       rofi-wayland
       slurp  # screenshot capture
+      swaybg  # set wallpapers
       wl-clipboard  # clipboard
       wev
       xfce.thunar
