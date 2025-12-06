@@ -56,7 +56,7 @@
       mako  # notifications
       pavucontrol
       pulseaudio-ctl
-      rofi-wayland
+      rofi
       slurp  # screenshot capture
       swaybg  # set wallpapers
       wl-clipboard  # clipboard
@@ -74,7 +74,7 @@
       # CLI tools
       bat
       comma
-      config.boot.kernelPackages.perf
+      perf
       difftastic
       eza
       fd

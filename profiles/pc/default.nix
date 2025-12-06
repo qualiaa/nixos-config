@@ -49,12 +49,12 @@
   # TODO: i3 configuration service module
   #       e.g. https://github.com/BirdeeHub/birdeeSystems/blob/582fe0c1123395c8cc0aa3a1bf6dfa3ce65dcfbb/common/i3/default.nix
   # Desktop, login and window managers
-  services.xserver.displayManager.gdm.enable = true;
+  services.displayManager.gdm.enable = true;
   programs.sway = {
     enable = true;
     wrapperFeatures.gtk = true;
   };
-  services.xserver.desktopManager.gnome.enable = true;
+  services.desktopManager.gnome.enable = true;
   environment.sessionVariables.NIXOS_OZONE_WL = "1";  # chromium/electron wayland support
   environment.sessionVariables.MOZ_ENABLE_WAYLAND = "1";  # firefox wayland support
 
