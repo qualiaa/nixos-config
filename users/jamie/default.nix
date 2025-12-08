@@ -9,9 +9,6 @@
     packages = with pkgs; [] ++ (lib.optionals isDesktop [
       # Networking
       bluez
-      networkmanager-openvpn
-      networkmanagerapplet
-      openvpn
 
       # Fundamental tools
       kitty

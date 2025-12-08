@@ -28,6 +28,9 @@
 
   # Networking services
   networking.networkmanager.enable = true;
+  networking.networkmanager.plugins = [
+    pkgs.networkmanager-openvpn
+  ];
   services.avahi = {
     enable = true;
     ipv4 =  true;
