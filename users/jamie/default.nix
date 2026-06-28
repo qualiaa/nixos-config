@@ -34,7 +34,7 @@
       # Messengers
       discord
       element-desktop
-      signal-desktop-bin
+      signal-desktop
 
       # Viewers
       feh
