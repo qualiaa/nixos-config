@@ -37,7 +37,7 @@
       signal-desktop
 
       # Viewers
-      feh
+      imv
       vlc
       zathura
       rmview
@@ -58,8 +58,8 @@
       swaybg  # set wallpapers
       wl-clipboard  # clipboard
       wev
-      xfce.thunar
-      xfce.tumbler
+      thunar
+      tumbler
       zenith
 
       # Nix tools
